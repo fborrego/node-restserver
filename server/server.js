@@ -19,7 +19,6 @@ app.use(express.static(path.resolve(__dirname, '../public')));
 //configuración global de rutas
 app.use(require('./routes/index'));
 
-
 mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
     (err, res) => {
 
